@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Cairo;
+  src: url(./Fonts/Cairo-VariableFont_slnt\,wght.ttf);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Cairo;
+}
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #eee;
+  display: flex;
+  position: relative;
+}
+.container div {
+  width: calc(50% - 20px);
+  height: 100%;
+}
+.white {
+  background: #fff;
+  border: 20px solid #444;
+  border-right: 0;
+}
+.white img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.black {
+  background: #444;
+  border: 20px solid #fff;
+  border-left: 0;
+}
